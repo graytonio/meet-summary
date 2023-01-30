@@ -60,11 +60,8 @@ func loadConfig() {
 
 	viper.AutomaticEnv()
 
-	if err := viper.ReadInConfig(); err == nil {
-		fmt.Printf("Using config file: %s", viper.ConfigFileUsed())
-	} else {
-		fmt.Printf("Error loading config file: %v", err)
-	}
+	// TODO Debug log line
+	viper.ReadInConfig()
 }
 
 func Execute() error {
