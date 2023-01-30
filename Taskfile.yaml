@@ -1,0 +1,7 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  build:
+    goreleaser build --snapshot --rm-dist --single-target
